@@ -1,0 +1,504 @@
+*{
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    position: relative;
+    width: 100%;
+    height: 3.9rem;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -.02rem;
+    font-size: 0.9rem;
+    box-shadow: 0 4px 2px -2px rgb(0 0 0 / 8%);
+    /* box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%); */
+    z-index: 1010;
+}
+.navbar #nav-logo{
+    float: left;
+}
+.navbar .search-nav{
+    display: flex;
+    align-items: center;
+    background-color: #F7F9FA;
+    border-radius: 30px;
+    border: 1px solid black;
+    height: 80%;
+    width: 45%;
+    padding:  0 0.9rem;
+    font-family: Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #CECECE;
+    font-size: 1rem;
+}
+
+.search-nav #search-icon{
+    float: left;
+    margin-right: 10px;
+}
+.search-nav input{
+    margin-left: 10px;
+    min-width: 30em;
+    max-width: 100%;
+    background: transparent;
+    padding: 5px;
+}
+.search-nav input:focus{
+    outline: none;
+}
+
+.search-nav input[placeholder]{
+    font-family: Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    line-height: 1.4;
+}
+
+.btn{
+    padding: 10px 17px;
+    background-color: white;
+    border: 1px solid black;
+    font-family: Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 700;
+}
+
+.sign-up, .udemy-business, .start-teaching{
+    background-color: black;
+    color: white;
+}
+
+.navbar .btn-language{
+    padding: 8px 10px;
+    background-color: white;
+    border: 1px solid black;
+}
+
+
+.billboard{
+    position: relative;
+    width: 100%;
+    margin: auto;
+
+    /* margin: auto; */
+}
+
+.billboard-content{
+    position: absolute;
+    width: 32%;
+    left: 4rem;
+    top: 4rem;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 8%), 0 4px 12px rgb(0 0 0 / 8%);
+}
+
+.billboard-content .black-friday{
+    font-family: SuisseWorks,Georgia,Times,times new roman,serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 700;
+    font-size: 2.1rem;
+    line-height: 1.25;
+    letter-spacing: -.05rem;
+}
+
+.billboard-content .black-subtitle{
+    font-family: Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.section-1{
+    font-family: Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    width: 95%;
+    margin: auto;
+    
+}
+
+.header .heading-sec1{
+    max-width: 80rem;
+    font-family: SuisseWorks,Georgia,Times,times new roman,serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.2;
+    /* letter-spacing: -.05rem; */
+}
+
+.header .heading-sec1-subtitle{
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+
+#tabs-container{
+    display: flex;
+    width: 95%;
+    height: 1.6rem;
+    margin: 0 auto;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    /* justify-content: center; */
+    font-weight: 900;
+    font-size: 1.3rem;
+    color: #6a6f73;
+}
+
+#tabs-container h5{
+    padding: 0 20px 15px 0;
+}
+
+#tabs-container h5:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.courses-sec1{
+    width: 95%;
+    margin: auto;
+    padding: 40px;
+    border: 1px solid #d1d7dc;
+}
+
+.courses-heading{
+    font-family: Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -.02rem;
+}
+
+.courses-subtitle{
+    font-family: Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 1rem;
+    max-width: 50rem;
+}
+
+.explore-python{
+    margin-bottom: 10px;
+}
+.courses{
+    display: grid;
+    /* width: 80%; */
+    padding: 20px;
+    gap: .5rem;
+    grid-template-columns: repeat(5, 1fr) ;
+    place-content: center;
+    justify-content: center;
+}
+
+.course > img, .module > img{
+    border: 1px solid #d1d7dc;
+}
+
+.course-subtitle{
+    font-family: Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+}
+
+.course-subtitle > h3{
+    line-height: 1.1;
+    font-size: 1rem;
+    letter-spacing: -.03rem;
+    width: 14.5rem;
+    
+    
+    /* max-width: 100%; */
+    /* color:black; */
+}
+
+.course-subtitle > h3 a{
+    color: black;
+    text-decoration: none;
+    height: 40px;
+
+}
+.instructors, .reviews{
+    color: #6a6f73;
+    font-size: 12px;
+    margin-top: -4px;
+    /* font-family: Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol; */
+}
+.ratings{
+    display: flex;
+    height: 10px;
+    align-items: center;
+}
+
+.rating-number{
+    color: #b4690e;
+    font-family: Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -.02rem;
+    font-size: 1rem;
+}
+
+.course-subtitle img{
+    mix-blend-mode: darken;
+}
+
+.reviews{
+    margin: 0;
+}
+
+.prices{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    font-weight: 700;
+    font-weight: 700;
+    letter-spacing: -.02rem;
+}
+
+.prices h4{
+    margin-right: 10px;
+}
+
+.old-price{
+    color:#6a6f73;
+    font-size: 14px;
+    font-weight: 200;
+    text-decoration: line-through
+}
+
+.course-subtitle > a{
+    text-decoration: none;
+    background-color: #ECEB98;
+    color: #3d3c0a;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 5px 8px;
+}
+
+.section-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #F7F9FA;
+    height: 15vh;
+    width: 100%;
+    margin: 4rem auto;
+    font-weight: 700;
+    font-family: Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+}
+
+.random{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.random-subtitle{
+    width: 70%;
+    margin-left: 10px;
+}
+.random .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-color: #D1D7DC;
+    border-radius: 40px;
+}
+
+.section-3{
+    font-family: Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    width: 95%;
+    margin: auto;
+}
+.student-view{
+    font-size: 700;
+}
+
+.modules{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(5, 1fr) ;
+    place-content: center;
+    justify-content: center;
+}
+
+.section-4, .section-5{
+    width: 95%;
+    margin: auto;
+    font-family: Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+}
+
+.categories{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    place-content: center;
+    justify-content: center;
+}
+
+.categories p{
+    font-weight: 700;
+}
+
+.categories img:hover{
+    width: 305px;
+    height: 305px;
+}
+
+.section-5{
+    width: 100%;
+    background-color: #F7F9FA;
+    padding:  20px 0;
+}
+
+.section-5 > div{
+    width: 95%;
+    margin: auto;
+    padding: 10px 0;
+    
+}
+.features-list{
+    display:flex;
+    justify-content: space-between;
+    max-width: 90%;
+}
+
+.features-list ul li{
+    list-style-type: none;
+}
+
+.features-list ul li a{
+    color: #5624d0;
+    font-weight: 700;
+}
+.features-list ul li p{
+    color: #6a6f73;
+    font-size: 14px;
+    font-family: Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+}
+
+.section-6{
+    height: 40vh;
+    padding: 20px;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.heading-section6{
+    max-width: 80rem;
+    font-family: SuisseWorks,Georgia,Times,times new roman,serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+.section6-subtitle{
+    font-family: Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 1rem;
+}
+
+.logo-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-imagecontainer{
+    display: flex;
+    width: 70%;
+    margin: 20px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading{
+    max-width: 80rem;
+    font-family: SuisseWorks,Georgia,Times,times new roman,serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 700;
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.descriptions{
+    width: 50%;
+    margin: auto;
+}
+
+.img-container{
+    width: 50%;
+}
+
+.descriptions .subtitle{
+    font-family: Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 1.2rem;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    background-color: #1C1D1F;
+    color: white;
+    padding: 10px;
+}
+
+.footer-list{
+    display: flex;
+    width: 50%;
+    margin: auto 10px;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-list ul li {
+    list-style-type: none;
+    line-height: 1.4;
+}
+
+.footer-list ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+    line-height: 1.4;
+    font-size: 1rem;
+}
+
+.footer-list ul li a:hover{
+    text-decoration: underline;
+}
+
+.footer-button{
+    display: flex;
+    width: 10%;
+    font-weight: 400;
+    font-size: 17px;
+    align-items: center;
+    background-color: #1C1D1F;
+    color: white;
+    border: 1px solid white;
+    position: absolute;
+    top: 35px;
+    right: 40px;
+    padding: 5px 10px;
+}
+
+.footer-button img{
+    margin: 5px;
+}
+
+.footer-last{
+    width: 96%;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+
+}
+.footer-copyright{
+    font-size: 12px;
+    font-family: BlinkMacSystemFont,Roboto,segoe ui,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
+}
